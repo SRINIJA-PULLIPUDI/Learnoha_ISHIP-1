@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Builder</title>
-    <link rel="stylesheet" href="portfolioForm.css">
-    <link rel="icon" href="/Images/logo2.jpg" type="image/png">
+    <link rel="stylesheet" href="./portfolioForm.css">
+    <link rel="icon" href="./Images/logo2.jpg" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body onload="reload()" onscroll="Fix()">
     <header id="Header">
         <div class="logo">
-        <a href="mainpage.html">
-            <img src="/Images/logo.png" class="image"/>
+        <a href="./mainpage.html">
+            <img src="./Images/logo.png" class="image"/>
         </a>
         </div>
         <div class="menu-toggle" onclick="toggleMenu()">
@@ -20,11 +20,11 @@
         </div>
         <nav>
         <ul class="options">
-            <li class="l"><a href="bookshelf.html" class="navi">Bookshelf</a></li>
-            <li class="l"><a href="calendar.html" class="navi">Calendar</a></li>
-            <li class="l"><a href="portfolioForm.html" class="navi active">Portifolio</a></li>
-            <li class="l"><a href="bookswap.html" class="navi">Bookswap</a></li>
-            <li class="l"><a href="pdf.html" class="navi">Vault</a></li>
+            <li class="l"><a href="./bookshelf.html" class="navi">Bookshelf</a></li>
+            <li class="l"><a href="./calendar.html" class="navi">Calendar</a></li>
+            <li class="l"><a href="./portfolioForm.html" class="navi active">Portifolio</a></li>
+            <li class="l"><a href="./bookswap.html" class="navi">Bookswap</a></li>
+            <li class="l"><a href="./pdf.html" class="navi">Vault</a></li>
         </ul>
         </nav>
         <div class="toggle-switch">
@@ -47,11 +47,11 @@
             <br/>
         </div>
         
-        <a href="Motivation2.html" class="relax">
+        <a href="./Motivation2.html" class="relax">
             <div class="relaxnav"></div>
             <div class="relaxcont"> Switch to <br/> Relax Mode </div>
         </a>
-      <a href="homepage.html" class="logout"> Logout </a>
+      <a href="./homepage.html" class="logout"> Logout </a>
     </div>
   </header>
 
@@ -429,7 +429,7 @@
             
             <div class="action-btns">
                 <button type="submit" id="save-btn" class="save-btn">Save Data</button>
-                 <a href="portfolioPreview.html" target="_blank"><button class="preview-btn">Preview Portfolio</button></a>
+                 <a href="./portfolioPreview.html" target="_blank"><button class="preview-btn">Preview Portfolio</button></a>
             </div>
         </div>
     </div>
@@ -438,7 +438,7 @@
     <footer>
     <div class="des">
       <div class="sec">
-        <img src="/Images/logo.png"class="logo1"/>
+        <img src="./Images/logo.png"class="logo1"/>
         <div class="logocont"> Your comprehensive learning companion <br/> for academic success. </div>
       </div>
       <div class="sec">
@@ -501,18 +501,18 @@ function toggleMenu() {
 }
 
 </script>
-    <script src="portfolioForm.js"></script>
-    <script src="homepage.js"></script>
+    <script src="./portfolioForm.js"></script>
+    <script src="./homepage.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const toggle = document.getElementById("toggle");
 
       // Step 1: Set toggle based on mode
       const currentPage = window.location.pathname;
-      if (currentPage.includes("Motivation2.html")) {
+      if (currentPage.includes("./Motivation2.html")) {
         localStorage.setItem("relaxMode", "true");
         toggle.checked = true;
-      } else if (currentPage.includes("bookshelf.html")) {
+      } else if (currentPage.includes("./bookshelf.html")) {
         localStorage.setItem("relaxMode", "false");
         toggle.checked = false;
       }
@@ -520,9 +520,9 @@ function toggleMenu() {
       // Step 2: When toggle changes, redirect
       toggle.addEventListener("change", function () {
         if (this.checked) {
-          window.location.href = "Motivation2.html";
+          window.location.href = "./Motivation2.html";
         } else {
-          window.location.href = "bookshelf.html";
+          window.location.href = "./Motivation2.html";
         }
       });
     });

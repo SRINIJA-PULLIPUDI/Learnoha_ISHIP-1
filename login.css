@@ -33,7 +33,7 @@ body {
 .pic{
   width:600px;
   height:80svh;
-  background-image: url('/static/manholdingbook.png');
+  background-image: url('./static/manholdingbook.png');
 }
 
 .container {

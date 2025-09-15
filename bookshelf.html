@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LearnOha Book Shelf</title>
-    <link rel="icon" href="/Images/logo2.jpg" type="image/png">
+    <link rel="icon" href="./Images/logo2.jpg" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <style>
         *{
@@ -118,7 +118,7 @@
                 width: 70px;
                 height: 30px;
                 background-color: #7AC7D7;
-                background-image: url(/Images/relax_toggle.png);
+                background-image: url(./Images/relax_toggle.png);
                 background-position: right;
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -230,7 +230,7 @@
             .relaxnav{
             width:60px;
             height: 60px;
-            background-image: url('/Images/relaxlogo1.png');
+            background-image: url('./Images/relaxlogo1.png');
             border-radius: 50%;
             border: 3px solid rgb(112, 112, 112);
             margin:0 0 0 1.5rem
@@ -549,8 +549,8 @@
 <body class="bg-gray-100 min-h-screen flex flex-col" onload="reload()">
     <header id="Header">
     <div class="logo">
-      <a href="mainpage.html">
-        <img src="/Images/logo.png" class="image"/>
+      <a href="./mainpage.html">
+        <img src="./Images/logo.png" class="image"/>
       </a>
     </div>
     <div class="menu-toggle" onclick="toggleMenu()">
@@ -558,11 +558,11 @@
     </div>
     <nav>
       <ul class="options">
-        <li class="l"><a href="bookshelf.html" class="navi active">Bookshelf</a></li>
-        <li class="l"><a href="calendar.html" class="navi">Calendar</a></li>
-        <li class="l"><a href="portfolioForm.html" class="navi">Portifolio</a></li>
-        <li class="l"><a href="bookswap.html" class="navi">Bookswap</a></li>
-        <li class="l"><a href="pdf.html" class="navi">Vault</a></li>
+        <li class="l"><a href="./bookshelf.html" class="navi active">Bookshelf</a></li>
+        <li class="l"><a href="./calendar.html" class="navi">Calendar</a></li>
+        <li class="l"><a href="./portfolioForm.html" class="navi">Portifolio</a></li>
+        <li class="l"><a href="./bookswap.html" class="navi">Bookswap</a></li>
+        <li class="l"><a href="./pdf.html" class="navi">Vault</a></li>
       </ul>
     </nav>
     <div class="toggle-switch">
@@ -585,11 +585,11 @@
         <br/>
       </div>
       
-      <a href="Motivation2.html" class="relax">
+      <a href="./Motivation2.html" class="relax">
         <div class="relaxnav"></div>
         <div class="relaxcont"> Switch to <br/> Relax Mode </div>
       </a>
-      <a href="homepage.html" class="logout"> Logout </a>
+      <a href="./homepage.html" class="logout"> Logout </a>
     </div>
   </header>
 
@@ -631,7 +631,7 @@
     <footer>
     <div class="des">
       <div class="sec">
-        <img src="/Images/logo.png"class="logo1"/>
+        <img src="./Images/logo.png"class="logo1"/>
         <div class="logocont"> Your comprehensive learning companion <br/> for academic success. </div>
       </div>
       <div class="sec">
@@ -979,7 +979,7 @@
         populateFolders();
         renderFiles();
     </script>
-    <script src="homepage.js"></script>
+    <script src="./homepage.js"></script>
     <script>
         displayUserInfo('username', 'email');
     </script>
@@ -999,10 +999,10 @@
 
       // Step 1: Set toggle based on mode
       const currentPage = window.location.pathname;
-      if (currentPage.includes("Motivation2.html")) {
+      if (currentPage.includes("./Motivation2.html")) {
         localStorage.setItem("relaxMode", "true");
         toggle.checked = true;
-      } else if (currentPage.includes("bookshelf.html")) {
+      } else if (currentPage.includes("./bookshelf.html")) {
         localStorage.setItem("relaxMode", "false");
         toggle.checked = false;
       }
@@ -1010,9 +1010,9 @@
       // Step 2: When toggle changes, redirect
       toggle.addEventListener("change", function () {
         if (this.checked) {
-          window.location.href = "Motivation2.html";
+          window.location.href = "./Motivation2.html";
         } else {
-          window.location.href = "bookshelf.html";
+          window.location.href = "./Motivation2.html";
         }
       });
     });

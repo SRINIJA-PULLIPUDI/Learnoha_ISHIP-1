@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/Images/logo2.jpg" type="image/png">
-    <title>Game Loading to Main Page</title><link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./Images/logo2games.png" type="image/png">
+    <title>Games</title><link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./motivation2abc.css">
-  <link rel="icon" href="/Images/logo2.jpg" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
@@ -640,7 +639,7 @@ body.menu-open .profile-icon {
 .relaxnav{
   width:60px;
   height: 60px;
-   background-image: url('/Images/study1.jpg');
+   background-image: url('./Images/study1.jpg');
   background-position: center;
   background-size: cover;
   border-radius: 50%;
@@ -739,7 +738,7 @@ body.menu-open .profile-icon {
   width: 70px;
   height: 30px;
   background-color: #F5E1D8;
-  background-image: url(./Images/./study_toggle.jpg);
+  background-image: url(./Images/study_toggle.jpg);
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -759,7 +758,7 @@ body.menu-open .profile-icon {
   top: 2px;
   left: 5px;
   background-color: #fff;
-  background-image: url(/Images/relax_toggle.png);
+  background-image: url(./Images/relax_toggle.png);
   background-position: center;
   background-size: contain;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
@@ -827,8 +826,8 @@ body.menu-open .profile-icon {
 
     <nav id="navMenu">
       <a href="./Motivation2.html">Motivation</a>
-      <a href="funfacts2.html">Fun-Facts</a>
-      <a href="Jokes.html">Jokes</a>
+      <a href="./funfacts2.html">Fun-Facts</a>
+      <a href="./Jokes.html">Jokes</a>
       <a href="./loading_page.html" class="active">Games</a>
       <a href="./music_page.html">Music</a>
     </nav>
@@ -861,11 +860,11 @@ body.menu-open .profile-icon {
         <br/>
       </div>
       
-      <a href="mainpage.html" class="relax">
+      <a href="./mainpage.html" class="relax">
         <div class="relaxnav"></div>
         <div class="relaxcont"> Switch to <br/> Study Mode </div>
       </a>
-      <a href="homepage.html" class="logout"> Logout </a>
+      <a href="./homepage.html" class="logout"> Logout </a>
     </div>
   </header>
    <h1>
@@ -922,7 +921,7 @@ body.menu-open .profile-icon {
   <footer>
     <div class="des">
       <div class="sec">
-        <img src="/Images/logo.png"class="logo1"/>
+        <img src="./Images/logo.png"class="logo1"/>
         <div class="logocont"> Your comprehensive learning companion <br/> for academic success. </div>
       </div>
       <div class="sec">
@@ -1102,10 +1101,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Step 1: Set toggle based on mode
   const currentPage = window.location.pathname;
-  if (currentPage.includes("Motivation2.html")) {
+  if (currentPage.includes("./Motivation2.html")) {
     localStorage.setItem("relaxMode", "true");
     toggle.checked = true;
-  } else if (currentPage.includes("music_page.html")) {
+  } else if (currentPage.includes("./music_page.html")) {
     localStorage.setItem("relaxMode", "false");
     toggle.checked = false;
   }
@@ -1115,7 +1114,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (this.checked) {
       window.location.href = "./mainpage.html";
     } else {
-      window.location.href = "./music_page.html";
+      window.location.href = "./mainpage.html";
     }
   });
 });

@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Book Swap</title>
-    <link rel="stylesheet" href="bookswapcss.css">
-    <link rel="icon" href="/Images/logo2.jpg" type="image/png">
+    <link rel="stylesheet" href="./bookswapcss.css">
+    <link rel="icon" href="./Images/logo2.jpg" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
@@ -132,12 +132,12 @@
 
     <header>
         <div class="logolearnoha">
-            <a href="mainpage.html">
-                <img src="/Images/logo.png" class="imagelearnoha"/>
+            <a href="./mainpage.html">
+                <img src="./Images/logo.png" class="imagelearnoha"/>
             </a>
         </div>
         <div class="header-text">
-            <a class="flds a" href="mainpage.html">Home</a>
+            <a class="flds a" href="./mainpage.html">Home</a>
             <div class="flds addbook" onclick="openFormOverlay()">Add Book</div>
             <div class="flds" onclick="openPanel('messages')">Notifications</div>
             <div class="flds" onclick="openPanel('mybooks')">My Books</div>
@@ -171,11 +171,11 @@
                 <br/>
             </div>
             
-            <a href="Motivation2.html" class="relax">
+            <a href="./Motivation2.html" class="relax">
                 <div class="relaxnav"></div>
                 <div class="relaxcont"> Switch to <br/> Relax Mode </div>
             </a>
-            <a href="homepage.html" class="logout"> Logout </a>
+            <a href="./homepage.html" class="logout"> Logout </a>
         </div>
 
 
@@ -196,19 +196,19 @@
     <div class="aboutbookswap">
 
           <div class="logo upload">
-            <img src="static/upload.png" alt="">
+            <img src="./static/upload.png" alt="">
             <h2>Upload Your Book</h2>
             <p>List books to sell or swap with title, condition, and price.</p>
           </div>
 
           <div class="logo search">
-            <img src="static/searchlogo.png" alt="">
+            <img src="./static/searchlogo.png" alt="">
             <h2>Browse & Search</h2>
             <p>Find books by subject, title, or college with ease.</p>
           </div>
 
           <div class="logo swap">
-            <img src="static/swappinglogo.png" alt="">
+            <img src="./static/swappinglogo.png" alt="">
             <h2>Connect & Swap</h2>
             <p>Message students, finalize swaps, and grow your library.</p>
           </div>
@@ -275,7 +275,7 @@
  <footer>
     <div class="des">
       <div class="sec">
-        <img src="/Images/logo.png"class="logo1"/>
+        <img src="./Images/logo.png"class="logo1"/>
         <div class="logocont"> Your comprehensive learning companion <br/> for academic success. </div>
       </div>
       <div class="sec">
@@ -473,9 +473,6 @@ function handleClick(clickedIcon, action, requestId) {
     }
 }
 
-// Remove the separate setRed function as its logic is now integrated.
-// The HTML for the accept icon should also be simplified to:
-// <div><i onclick="handleClick(this, 'accept', '${req.id}')" class="right icon fa-regular fa-circle-check"></i></div>
 
         function renderMessagesPanel() {
             const content = document.getElementById("panelContent");
@@ -823,7 +820,7 @@ function handleClick(clickedIcon, action, requestId) {
             location.reload();
         }
     </script>
-    <script src="homepage.js"></script>
+    <script src="./homepage.js"></script>
     <script>
         displayUserInfo('username', 'email');
     </script>
@@ -834,10 +831,10 @@ function handleClick(clickedIcon, action, requestId) {
 
       // Step 1: Set toggle based on mode
       const currentPage = window.location.pathname;
-      if (currentPage.includes("Motivation2.html")) {
+      if (currentPage.includes("./Motivation2.html")) {
         localStorage.setItem("relaxMode", "true");
         toggle.checked = true;
-      } else if (currentPage.includes("bookshelf.html")) {
+      } else if (currentPage.includes("./bookshelf.html")) {
         localStorage.setItem("relaxMode", "false");
         toggle.checked = false;
       }
@@ -845,9 +842,9 @@ function handleClick(clickedIcon, action, requestId) {
       // Step 2: When toggle changes, redirect
       toggle.addEventListener("change", function () {
         if (this.checked) {
-          window.location.href = "Motivation2.html";
+          window.location.href = "./Motivation2.html";
         } else {
-          window.location.href = "bookshelf.html";
+          window.location.href = "./Motivation2.html";
         }
       });
     });

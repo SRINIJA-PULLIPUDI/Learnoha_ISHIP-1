@@ -32,7 +32,7 @@ body {
   width: 70px;
   height: 30px;
   background-color: #7AC7D7;
-  background-image: url(/Images/relax_toggle.png);
+  background-image: url(./Images/relax_toggle.png);
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -147,7 +147,7 @@ body {
 .relaxnav{
   width:60px;
   height: 60px;
-  background-image: url('/Images/relaxlogo1.png');
+  background-image: url('./Images/relaxlogo1.png');
   border-radius: 50%;
   border: 3px solid rgb(112, 112, 112);
   margin:0 0 0 1.5rem
@@ -302,7 +302,7 @@ header {
 main {
     margin-top: 4px;
     margin-bottom: 10px;
-    background-image: url('static/mainimage.jpg'); /* Placeholder for mainbookimg.png */
+    background-image: url('./static/mainimage.jpg'); /* Placeholder for mainbookimg.png */
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -1168,7 +1168,7 @@ h1 {
 
 @media (max-width: 690px) {
     main {
-        background-image: url('static/book_images/690pximg.png');
+        background-image: url('./static/book_images/690pximg.png');
         background-position: center;
         background-size: cover;
     }

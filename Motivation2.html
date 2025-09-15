@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Motivation</title>
-  <link rel="stylesheet" href="motivation2abc.css">
+  <link rel="stylesheet" href="./motivation2abc.css">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="/Images/logo2.jpg" type="image/png">
+  <link rel="icon" href="./Images/logo2games.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -20,8 +20,8 @@
 
     <nav id="navMenu">
       <a href="#" class="active">Motivation</a>
-      <a href="funfacts2.html">Fun-Facts</a>
-      <a href="Jokes.html">Jokes</a>
+      <a href="./funfacts2.html">Fun-Facts</a>
+      <a href="./Jokes.html">Jokes</a>
       <a href="./loading_page.html">Games</a>
       <a href="./music_page.html">Music</a>
     </nav>
@@ -54,11 +54,11 @@
         <br/>
       </div>
       
-      <a href="mainpage.html" class="relax">
+      <a href="./mainpage.html" class="relax">
         <div class="relaxnav"></div>
         <div class="relaxcont"> Switch to <br/> Study Mode </div>
       </a>
-      <a href="homepage.html" class="logout"> Logout </a>
+      <a href="./homepage.html" class="logout"> Logout </a>
     </div>
   </header>
 
@@ -142,7 +142,7 @@
   <footer>
     <div class="des">
       <div class="sec">
-        <img src="/Images/logo.png"class="logo1"/>
+        <img src="./Images/logo.png"class="logo1"/>
         <div class="logocont"> Your comprehensive learning companion <br/> for academic success. </div>
       </div>
       <div class="sec">
@@ -281,10 +281,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Step 1: Set toggle based on mode
   const currentPage = window.location.pathname;
-  if (currentPage.includes("Motivation2.html")) {
+  if (currentPage.includes("./Motivation2.html")) {
     localStorage.setItem("relaxMode", "true");
     toggle.checked = true;
-  } else if (currentPage.includes("music_page.html")) {
+  } else if (currentPage.includes("./music_page.html")) {
     localStorage.setItem("relaxMode", "false");
     toggle.checked = false;
   }
@@ -292,9 +292,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Step 2: When toggle changes, redirect
   toggle.addEventListener("change", function () {
     if (this.checked) {
-      window.location.href = "mainpage.html";
+      window.location.href = "./mainpage.html";
     } else {
-      window.location.href = "mainpage.html";
+      window.location.href = "./mainpage.html";
     }
   });
 });

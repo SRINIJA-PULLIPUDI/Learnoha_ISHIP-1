@@ -113,7 +113,7 @@ header {
   width: 70px;
   height: 30px;
   background-color: #7AC7D7;
-  background-image: url(/Images/relax_toggle.png);
+  background-image: url(./Images/relax_toggle.png);
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -228,7 +228,7 @@ header {
 .relaxnav{
   width:60px;
   height: 60px;
-  background-image: url('/Images/relaxlogo1.png');
+  background-image: url('./Images/relaxlogo1.png');
   border-radius: 50%;
   border: 3px solid rgb(112, 112, 112);
   margin:0 0 0 1.5rem
@@ -383,62 +383,6 @@ header {
 .welcomeuser{
   width:65%;
 }
-
-/* .hero{
-  display: flex;
-}
-
-.hero-section {
-  padding: 4rem 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.hero-content {
-  max-width: 900px;
-  text-align: left;
-}
-
-.hero-title {
-  font-size: 3.5rem;
-  font-weight: 800;
-  line-height: 1.2;
-  color: #333;
-}
-
-.hero-title .learning-word {
-  color: #9B51E0; 
-}
-
-.hero-title .experience-word {
-  color: #5798FF;
-}
-
-.hero-description {
-  margin-top: 1.5rem;
-  font-size: 1.1rem;
-  color: #555;
-  max-width: 600px;
-}
-
-.get-started-button {
-  margin-top: 2rem;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  background-color: #5798FF;
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-  transition: transform 0.2s;
-  display: inline-block;
-}
-
-.get-started-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-} */
 
 
 /* Who We Are */

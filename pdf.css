@@ -118,7 +118,7 @@ header {
   width: 70px;
   height: 30px;
   background-color: #7AC7D7;
-  background-image: url(/Images/relax_toggle.png);
+  background-image: url(./Images/relax_toggle.png);
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -233,7 +233,7 @@ header {
 .relaxnav{
   width:60px;
   height: 60px;
-  background-image: url('/Images/relaxlogo1.png');
+  background-image: url('./Images/relaxlogo1.png');
   border-radius: 50%;
   border: 3px solid rgb(112, 112, 112);
   margin:0 0 0 1.5rem
@@ -412,7 +412,7 @@ footer{
 .card.plus{
   font-size: 15px;
   color:#00A9FF;
-  background-image: url("download.jpg"); 
+  background-image: url("./download.jpg"); 
   background-size: cover;
   background-position: center;
 }
